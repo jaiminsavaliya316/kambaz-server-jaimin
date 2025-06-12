@@ -1,0 +1,20 @@
+{
+  "type": "module",
+  "name": "kambaz-server-jaimin",
+  "version": "1.0.0",
+  "description": "This is a server for web application mern",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Jaimin",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "uuid": "^11.1.0"
+  }
+}
