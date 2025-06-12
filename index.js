@@ -8,6 +8,7 @@ import CourseRoutes from "./Kambaz/Courses/routes.js";
 import cors from "cors";
 
 const app = express();
+console.log(process.env.NETLIFY_URL)
 app.use(cors({
     credentials: true,
     origin: process.env.NETLIFY_URL || "http://localhost:5173",
