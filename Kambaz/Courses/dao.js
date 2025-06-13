@@ -22,7 +22,9 @@ export function deleteCourse(courseId) {
   Database.courses = courses.filter((course) => course._id !== courseId);
   Database.enrollments = enrollments.filter(
     (enrollment) => enrollment.course !== courseId
-);}
+  );
+  return true;
+}
 
 export function updateCourse(courseId, courseUpdates) {
   const { courses } = Database;
