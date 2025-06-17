@@ -11,6 +11,13 @@ import EnrollmentRoutes from "./Kambaz/Enrollments/routes.js";
 import cors from "cors";
 
 const app = express();
+import mongoose from "mongoose";
+
+const CONNECTION_STRING =  process.env.MONGO_CONNECTION_STRING || "mongodb://127.0.0.1:27017/kambaz"
+mongoose.connect(CONNECTION_STRING)  
+  .then(() => console.log('MongoDB connected successfully'))
+  .catch(err => console.error('MongoDB connection error:', err));
+
 app.use(cors({
     credentials: true,
     origin: process.env.NETLIFY_URL || "http://localhost:5173",
