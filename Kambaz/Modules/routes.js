@@ -1,4 +1,4 @@
-import * as modulesDao from "./dao.js";
+import * as modulesDao from "../Modules/dao.js";
 export default function ModuleRoutes(app) {
 app.delete("/api/modules/:moduleId", async (req, res) => {
    const { moduleId } = req.params;
