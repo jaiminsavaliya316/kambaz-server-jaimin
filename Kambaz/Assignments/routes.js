@@ -20,4 +20,10 @@ app.post("/api/assignments/new", async (req, res) => {
    res.send(status);
 });
 
+app.get("/api/assignments/:assignmentId", async (req, res) => {
+   const { assignmentId } = req.params;
+   const status = await assignmentDao.getAssignmentById(assignmentId);
+   res.send(status);
+});
+
 }
