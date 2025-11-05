@@ -68,21 +68,11 @@ MONGO_CONNECTION_STRING=mongodb://127.0.0.1:27017/kambaz  # Local MongoDB
 MONGO_CONNECTION_STRING=mongodb+srv://username:password@cluster.mongodb.net/kambaz
 ```
 
-> **💡 Tip:** Change `SESSION_SECRET` to a random string for better security. The frontend must run on the port specified in `NETLIFY_URL` (default: 5173).
 ### Run the Server
 ```bash
 npm start
 ```
-
-✅ Server will start on `http://localhost:5000` (or your configured PORT)
-
 ---
-
-## 🔗 Related Links
-
-- **Frontend Repository:** [kambaz-jaimin](https://github.com/jaiminsavaliya316/kambaz-jaimin) ← **Go here for the full story and pretty screenshots!** 📸
----
-
 ## 🐛 Troubleshooting
 
 **MongoDB Connection Issues:**
